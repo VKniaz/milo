@@ -1,4 +1,8 @@
-main > .merch-card-collection > .content {
+main > div[class*="merch-cards-"] {
+  display: grid;
+}
+
+main > div[class*="merch-cards-"] > .content {
   grid-column: span 3;
   width: 100%;
 }

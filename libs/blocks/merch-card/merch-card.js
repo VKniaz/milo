@@ -135,7 +135,6 @@ const init = (el) => {
     const parentSection = fragmentParent.parentElement;
     section = parentSection;
   }
-  section.classList.add('merch-card-collection');
   const headings = el.querySelectorAll('h1, h2, h3, h4, h5, h6');
   decorateLinkAnalytics(el, headings);
   const images = el.querySelectorAll('picture');
