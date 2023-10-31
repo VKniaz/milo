@@ -1,4 +1,4 @@
-// Mon, 30 Oct 2023 23:45:59 GMT
+// Tue, 31 Oct 2023 16:48:26 GMT
 import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCSS as l}from"./lit-all.min.js";var c="(min-width: 900px)",i="(min-width: 1280px)",h="(min-width: 1440px)";var m=p`
     :host {
         position: relative;
@@ -307,19 +307,10 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
     --consonant-merch-card-catalog-icon-size: 40px;
 }
 
-div[data-removed-manifest-id] {
-    display: none;
-}
-
-main > .merch-card-collection > .content {
-    grid-column: span 3;
-    width: 100%;
-}
-
-main > .merch-card-collection.merch-cards-1,
-main > .merch-card-collection.merch-cards-2,
-main > .merch-card-collection.merch-cards-3,
-main > .merch-card-collection.merch-cards-4 {
+.merch-cards-1,
+.merch-cards-2,
+.merch-cards-3,
+.merch-cards-4 {
     display: grid;
     margin-bottom: var(--consonant-merch-spacing-m);
     justify-content: center;
@@ -337,9 +328,9 @@ main > .merch-card-collection.merch-cards-4 {
         --consonant-merch-card-special-offer-width: 302px;
     }
 
-    main > .merch-card-collection.merch-cards-2,
-    main > .merch-card-collection.merch-cards-3,
-    main > .merch-card-collection.merch-cards-4 {
+    .merch-cards-2,
+    .merch-cards-3,
+    .merch-cards-4 {
         grid-template-columns: repeat(2, fit-content(100%));
     }
 }
@@ -350,8 +341,8 @@ main > .merch-card-collection.merch-cards-4 {
         --consonant-merch-card-special-offer-width: 378px;
     }
 
-    main > .merch-card-collection.merch-cards-3,
-    main > .merch-card-collection.merch-cards-4 {
+    .merch-cards-3,
+    .merch-cards-4 {
         grid-template-columns: repeat(3, fit-content(100%));
     }
 }
@@ -362,7 +353,7 @@ main > .merch-card-collection.merch-cards-4 {
 
     }
 
-    main > .merch-card-collection.merch-cards-4 {
+    .merch-cards-4 {
         grid-template-columns: repeat(4, fit-content(100%));
     }
 }
@@ -408,6 +399,7 @@ merch-card hr {
 
 merch-card.has-divider hr {
     margin: var(--consonant-merch-card-spacing-xs) 0;
+    margin-bottom: var(--spacing-xxs);
 }
 
 merch-card[variant="special-offers"] span[is="inline-price"][data-template="priceStrikethrough"] {
