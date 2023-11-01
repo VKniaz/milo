@@ -27,7 +27,7 @@ describe('Merch Card', () => {
     document.body.innerHTML = await readFile({ path: './mocks/special-offers.html' });
     await init(document.querySelector('.special-offer'));
     const merchCard = document.querySelector('merch-card');
-    const heading = merchCard.querySelector('h4[slot="heading-xxs"]');
+    const heading = merchCard.querySelector('h5[slot="detail-m"]');
     const headingOne = merchCard.querySelector('h3[slot="heading-xs"]');
     const body = merchCard.querySelector('div[slot="body-xs"]');
     const footer = merchCard.querySelector('div[slot="footer"]');
@@ -61,7 +61,7 @@ describe('Merch Card', () => {
     document.body.innerHTML = await readFile({ path: './mocks/special-offers.html' });
     await init(document.querySelector('.merch-card.special-offer.evergreen'));
     const merchCard = document.querySelector('merch-card');
-    const heading = merchCard.querySelector('h4[slot="heading-xxs"]');
+    const heading = merchCard.querySelector('h5[slot="detail-m"]');
     const headingOne = merchCard.querySelector('h3[slot="heading-xs"]');
     const body = merchCard.querySelector('div[slot="body-xs"]');
     const detailBg = merchCard.querySelector('div[slot="detail-bg"]');
@@ -94,10 +94,10 @@ describe('Merch Card', () => {
       document.body.innerHTML = await readFile({ path: './mocks/plans-card.html' });
       await init(document.querySelector('.merch-card.plans.icons.secure'));
       const merchCard = document.querySelector('merch-card');
-      const heading = merchCard.querySelector('h4[slot="heading-xxs"]');
+      const heading = merchCard.querySelector('h4[slot="body-xxs"]');
       const headingOne = merchCard.querySelector('h3[slot="heading-xs"]');
       const body = merchCard.querySelector('div[slot="body-xs"]');
-      const detail = merchCard.querySelector('h5[slot="detail-m"]');
+      const detail = merchCard.querySelector('h4[slot="body-xxs"]');
       const footer = merchCard.querySelector('div[slot="footer"]');
       const buttons = footer.querySelectorAll('.con-button');
 
@@ -111,7 +111,7 @@ describe('Merch Card', () => {
       expect(merchCard.getAttribute('badge-background-color')).to.be.equal('#EDCC2D');
       expect(merchCard.getAttribute('badge-color')).to.be.equal('#000000');
       expect(JSON.parse(merchCard.getAttribute('icons'))).to.have.lengthOf(2);
-      expect(merchCard.getAttribute('checkboxLabel')).to.be.equal('Lorem ipsum dolor sit amet');
+      expect(merchCard.getAttribute('checkbox-label')).to.be.equal('Lorem ipsum dolor sit amet');
       expect(body.textContent).to.be.equal('Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.MaecenasSee terms about lorem ipsum');
       expect(detail.textContent).to.be.equal('Maecenas porttitor enim.');
       expect(buttons.length).to.be.equal(3);
@@ -124,10 +124,10 @@ describe('Merch Card', () => {
       document.body.innerHTML = await readFile({ path: './mocks/plans-card.html' });
       await init(document.querySelector('.plans.icons.skip-ribbon.skip-altCta'));
       const merchCard = document.querySelector('merch-card');
-      const heading = merchCard.querySelector('h4[slot=heading]');
-      const headingOne = merchCard.querySelector('h3[slot=heading-two]');
+      const heading = merchCard.querySelector('h3[slot=heading-xs]');
+      const headingOne = merchCard.querySelector('h2[slot=heading-m]');
       const body = merchCard.querySelector('div[slot=body-xs]');
-      const detail = merchCard.querySelector('h5[slot="detail-m"]');
+      const detail = merchCard.querySelector('h4[slot="body-xxs"]');
       const footer = merchCard.querySelector('div[slot="footer"]');
       const buttons = footer.querySelectorAll('.con-button');
 
@@ -158,7 +158,7 @@ describe('Merch Card', () => {
       document.body.innerHTML = await readFile({ path: './mocks/catalog.html' });
       await init(document.querySelector('.merch-card.ribbon'));
       const merchCard = document.querySelector('merch-card');
-      const heading = merchCard.querySelector('h4[slot="heading-xxs"]');
+      const heading = merchCard.querySelector('h3[slot="body-xs"]');
       const headingOne = merchCard.querySelector('h3[slot="heading-xs"]');
       const body = merchCard.querySelector('div[slot="body-xs"]');
       const actionMenu = merchCard.querySelector('div[slot="actionMenuContent"]');
@@ -189,7 +189,7 @@ describe('Merch Card', () => {
       document.body.innerHTML = await readFile({ path: './mocks/catalog.html' });
       await init(document.querySelector('.merch-card.catalog.empty-badge'));
       const merchCard = document.querySelector('merch-card');
-      const heading = merchCard.querySelector('h4[slot="heading-xxs"]');
+      const heading = merchCard.querySelector('h4[slot="body-xxs"]');
       const headingOne = merchCard.querySelector('h3[slot="heading-xs"]');
       const body = merchCard.querySelector('div[slot="body-xs"]');
       const actionMenu = merchCard.querySelector('div[slot="actionMenuContent"]');
