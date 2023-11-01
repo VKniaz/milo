@@ -1,4 +1,4 @@
-// Wed, 01 Nov 2023 00:21:26 GMT
+// Wed, 01 Nov 2023 00:23:23 GMT
 import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCSS as l}from"./lit-all.min.js";var c="(min-width: 900px)",i="(min-width: 1280px)",h="(min-width: 1440px)";var m=p`
     :host {
         position: relative;
@@ -458,10 +458,10 @@ merch-card [slot='heading-xl'] {
 
 merch-card [slot='detail-m'] {
     font-size: var(--consonant-merch-card-detail-m-font-size);
-    font-weight: var(--consonant-merch-card-detail-font-weight);
     letter-spacing: var(--consonant-merch-card-detail-m-letter-spacing);
     font-weight: var(--consonant-merch-card-detail-m-font-weight);
     text-transform: uppercase;
+    margin-top: 0;
     margin-bottom: var(--consonant-merch-spacing-xxs);
 }
 
