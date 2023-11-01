@@ -1,5 +1,5 @@
-// Wed, 01 Nov 2023 06:05:43 GMT
-import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCSS as l}from"./lit-all.min.js";var c="(min-width: 900px)",i="(min-width: 1280px)",h="(min-width: 1440px)";var m=p`
+// Wed, 01 Nov 2023 17:48:56 GMT
+import{html as r,LitElement as T}from"./lit-all.min.js";import{css as R,unsafeCSS as u}from"./lit-all.min.js";var h="(min-width: 900px)",m="(min-width: 1280px)",f="(min-width: 1440px)";var v=R`
     :host {
         position: relative;
         display: flex;
@@ -132,8 +132,9 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
         position: absolute;
         top: 16px;
         right: 16px;
-        background: url('../src/img/ellipsis.svg') no-repeat center center,
-            #f6f6f6;
+        background-color: #f6f6f6;
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: 16px 16px;
     }
     .hidden {
@@ -160,11 +161,12 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
     }
 
     .secure-transaction-icon {
-        height: 15px;
         width: 12px;
-        right: 16px;
-        background-image: url('../src/img/secure-transaction.svg');
+        height: 15px;
+        display: inline-block;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .checkbox-container,
@@ -180,7 +182,7 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
 
     .checkbox-container input[type='checkbox']:checked + .checkmark {
         background-color: var(--color-accent);
-        background-image: url('../src/img/checkmark-white-small.svg');
+        background-image: var(--checkmark-image);
         border-color: var(--color-accent);
     }
 
@@ -223,13 +225,16 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
     }
 
     /* Tablet */
-    @media screen and ${l(c)} {
+    @media screen and ${u(h)} {
     }
 
     /* Laptop */
-    @media screen and ${l(i)} {
+    @media screen and ${u(m)} {
     }
-`;var g=document.createElement("style");g.innerHTML=`
+`;var g=b=>`data:image/svg+xml;base64,${btoa(b)}`;var y=`<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10" height="10" fill="#757575" viewBox="0 0 12 15"><path d="M11.5 6H11V5A5 5 0 1 0 1 5v1H.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5ZM3 5a3 3 0 1 1 6 0v1H3Zm4 6.111V12.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1.389a1.5 1.5 0 1 1 2 0Z"/></svg>
+`;var w=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" data-name="Group 308011"><circle cx="2" cy="2" r="2" fill="#2c2c2c" data-name="Ellipse 70" transform="translate(6 6)"/><circle cx="2" cy="2" r="2" fill="#2c2c2c" data-name="Ellipse 71" transform="translate(12 6)"/><circle cx="2" cy="2" r="2" fill="#2c2c2c" data-name="Ellipse 72" transform="translate(0 6)"/></svg>
+`;var k=`<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 10 10"><path fill="#fff" d="M3.788 9A.999.999 0 0 1 3 8.615l-2.288-3a1 1 0 1 1 1.576-1.23l1.5 1.991 3.924-4.991a1 1 0 1 1 1.576 1.23l-4.712 6A.999.999 0 0 1 3.788 9z" class="spectrum-UIIcon--medium"/></svg>
+`;var j=["a[href]:not([disabled])","button:not([disabled])","textarea:not([disabled])",'input[type="text"]:not([disabled])','input[type="radio"]:not([disabled])','input[type="checkbox"]:not([disabled])',"select:not([disabled])",'[tabindex]:not([tabindex="-1"]):not([disabled])'].join(", "),[z,S,C,$]=["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"];var E=document.createElement("style");E.innerHTML=`
 :root {
 
     --consonant-merch-card-detail-font-size: 12px;
@@ -255,8 +260,8 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
     --consonant-merch-card-heading-xs-line-height: 22.5px;
     --consonant-merch-card-heading-s-font-size: 20px;
     --consonant-merch-card-heading-s-line-height: 25px;
-    --consonant-merch-card-heading-m-font-size: 18px;
-    --consonant-merch-card-heading-m-line-height: 27px;
+    --consonant-merch-card-heading-m-font-size: 24px;
+    --consonant-merch-card-heading-m-line-height: 30px;
     --consonant-merch-card-heading-l-font-size: 20px;
     --consonant-merch-card-heading-l-line-height: 30px;
     --consonant-merch-card-heading-xl-font-size: 36px;
@@ -324,7 +329,7 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
 }
 
 /* Tablet */
-@media screen and ${c} {
+@media screen and ${h} {
     :root {
         --consonant-merch-card-special-offer-width: 302px;
     }
@@ -337,7 +342,7 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
 }
 
 /* desktop */
-@media screen and ${i} {
+@media screen and ${m} {
     :root {
         --consonant-merch-card-special-offer-width: 378px;
     }
@@ -349,7 +354,7 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
 }
 
 /* Large desktop */
-    @media screen and ${h} {
+    @media screen and ${f} {
     :root {
 
     }
@@ -555,11 +560,11 @@ merch-card[variant="catalog"] [slot="action-menu-content"] a {
 div[slot="footer"] a.con-button {
     margin-left: var(--consonant-merch-spacing-xs);
 }
-`;document.head.appendChild(g);var s=class extends x{static properties={name:{type:String},variant:{type:String},type:{type:String},badgeColor:{type:String,attribute:"badge-color"},badgeBackgroundColor:{type:String,attribute:"badge-background-color"},badgeText:{type:String,attribute:"badge-text"},icons:{type:Array},actionmenu:{type:Boolean,attribute:"action-menu"},actionMenuContent:{type:String,attribute:"action-menu-content"},title:{type:String},description:{type:String},image:{type:String,attribute:"image"},customHr:{type:String,attribute:"hr"},detailBg:{type:String,attribute:"detail-bg"},secureLabel:{type:String,attribute:"secure-label"},checkboxLabel:{type:String,attribute:"checkbox-label"},evergreen:{type:Boolean},filters:{type:String,reflect:!0,converter:{fromAttribute:e=>Object.fromEntries(e.split(",").map(n=>{let[a,o]=n.split(":"),r=Number(o);return[a,isNaN(r)?void 0:r]})),toAttribute:e=>Object.entries(e).map(([n,a])=>isNaN(a)?n:`${n}:${a}`).join(",")}},types:{type:String,attribute:"types",reflect:!0}};static styles=[m];constructor(){super(),this.filters={},this.types=""}updated(e){e.has("badgeBackgroundColor")&&(this.style.border=`1px solid ${this.badgeBackgroundColor}`)}renderIcons(){return this.icons&&this.icons.length>0?t`
+`;document.head.appendChild(E);var P="MERCH-CARD",x=class extends T{static properties={name:{type:String},variant:{type:String},type:{type:String},badgeColor:{type:String,attribute:"badge-color"},badgeBackgroundColor:{type:String,attribute:"badge-background-color"},badgeText:{type:String,attribute:"badge-text"},icons:{type:Array},actionmenu:{type:Boolean,attribute:"action-menu"},actionMenuContent:{type:String,attribute:"action-menu-content"},title:{type:String},description:{type:String},image:{type:String,attribute:"image"},customHr:{type:String,attribute:"hr"},detailBg:{type:String,attribute:"detail-bg"},secureLabel:{type:String,attribute:"secure-label"},checkboxLabel:{type:String,attribute:"checkbox-label"},evergreen:{type:Boolean},filters:{type:String,reflect:!0,converter:{fromAttribute:e=>Object.fromEntries(e.split(",").map(t=>{let[o,n]=t.split(":"),a=Number(n);return[o,isNaN(a)?void 0:a]})),toAttribute:e=>Object.entries(e).map(([t,o])=>isNaN(o)?t:`${t}:${o}`).join(",")}},types:{type:String,attribute:"types",reflect:!0}};static styles=[v];constructor(){super(),this.filters={},this.types="",this.setAttribute("tabindex","0")}updated(e){e.has("badgeBackgroundColor")&&(this.style.border=`1px solid ${this.badgeBackgroundColor}`)}renderIcons(){return this.icons&&this.icons.length>0?r`
                   <div class="icons">
-                      ${this.icons.map(e=>t`<img src="${e.src}" alt="${e.alt}" />`)}
+                      ${this.icons.map(e=>r`<img src="${e.src}" alt="${e.alt}" />`)}
                   </div>
-              `:""}createCheckBox(){return this.checkboxLabel?t`
+              `:""}createCheckBox(){return this.style.setProperty("--checkmark-image",`url(${g(k)})`),this.checkboxLabel?r`
                   <div class="checkbox-container">
                       <input id="alt-cta" type="checkbox" />
                       <span
@@ -570,22 +575,26 @@ div[slot="footer"] a.con-button {
                           >${this.checkboxLabel}</label
                       >
                   </div>
-              `:""}createPlansFooter(){let e=t` <slot name="footer"></slot>`,n=this.secureLabel;return n?t` <div class="standard-wrapper">
+              `:""}createPlansFooter(){let e=r` <slot name="footer"></slot>`,t=this.secureLabel;return t?r` <div class="standard-wrapper">
                   <div class="secure-transaction-wrapper">
-                      <span class="secure-transaction-icon"></span>
+                      <span
+                          class="secure-transaction-icon"
+                          style="background-image: url('${g(y)}')"
+                      ></span>
+
                       <span class="secure-transaction-label"
-                          >${n}</span
+                          >${t}</span
                       >
                   </div>
                   ${e}
-              </div>`:e}decorateRibbon(){let e;if(!(!this.badgeBackgroundColor||!this.badgeColor||!this.badgeText))return this.evergreen&&(e=`border: 1px solid ${this.badgeBackgroundColor}; border-right: none;`),t`
+              </div>`:e}decorateRibbon(){let e;if(!(!this.badgeBackgroundColor||!this.badgeColor||!this.badgeText))return this.evergreen&&(e=`border: 1px solid ${this.badgeBackgroundColor}; border-right: none;`),r`
             <div
                 class="${this.variant}-ribbon"
                 style="background-color: ${this.badgeBackgroundColor}; color: ${this.badgeColor}; ${e?` ${e}`:""}"
             >
                 ${this.badgeText}
             </div>
-        `}toggleCheckBox(){let e=this.shadowRoot.querySelector("#alt-cta");e.checked=!e.checked;let n=this.shadowRoot.querySelector('slot[name="footer"]');if(n){let a=n.assignedNodes({flatten:!0}),o,r;a.forEach(d=>{r=d.querySelector(".alt-cta"),o=d.querySelector(".active")}),o&&r&&(o.classList.toggle("button--inactive",e.checked),r.classList.toggle("button--inactive",!e.checked))}}toggleActionMenu(){this.shadowRoot.querySelector('slot[name="action-menu-content"]').classList.toggle("hidden")}get title(){return this.querySelector('[slot="heading"]').textContent.trim()}updateFilters(e){let n={...this.filters};Object.keys(n).forEach(a=>{if(e){n[a]=Math.min(n[a],2);return}let o=n[a];o===1||isNaN(o)||(n[a]=Number(o)+1)}),this.filters=n}includes(e){return this.textContent.match(new RegExp(e,"i"))!==null}render(){switch(this.variant){case"special-offers":return this.renderSpecialOffer();case"segment":return this.renderSegment();case"plans":return this.renderPlans();case"catalog":return this.renderCatalog();default:return t` <div />`}}renderSpecialOffer(){return t` <div
+        `}toggleCheckBox(){let e=this.shadowRoot.querySelector("#alt-cta");e.checked=!e.checked;let t=this.shadowRoot.querySelector('slot[name="footer"]');if(t){let o=t.assignedNodes({flatten:!0}),n,a;o.forEach(s=>{a=s.querySelector(".alt-cta"),n=s.querySelector(".active")}),n&&a&&(n.classList.toggle("button--inactive",e.checked),a.classList.toggle("button--inactive",!e.checked))}}toggleActionMenu(){this.shadowRoot.querySelector('slot[name="action-menu-content"]').classList.toggle("hidden")}get title(){return this.querySelector('[slot="heading-xs"]').textContent.trim()}updateFilters(e){let t={...this.filters};Object.keys(t).forEach(o=>{if(e){t[o]=Math.min(t[o],2);return}let n=t[o];n===1||isNaN(n)||(t[o]=Number(n)+1)}),this.filters=t}includes(e){return this.textContent.match(new RegExp(e,"i"))!==null}render(){switch(this.variant){case"special-offers":return this.renderSpecialOffer();case"segment":return this.renderSegment();case"plans":return this.renderPlans();case"catalog":return this.renderCatalog();default:return r` <div />`}}renderSpecialOffer(){return r` <div
                 class="image"
                 style="${this.image?`background-image: url(${this.image})`:""}"
             >
@@ -596,23 +605,23 @@ div[slot="footer"] a.con-button {
                 <slot name="heading-xs"></slot>
                 <slot name="body-xs"></slot>
             </div>
-            ${this.evergreen?t`
+            ${this.evergreen?r`
                       <div
                           class="detail-bg-container"
                           style="background: ${this.detailBg}"
                       >
                           <slot name="detail-bg"></slot>
                       </div>
-                  `:t`
+                  `:r`
                       <hr />
                       <slot name="footer"></slot>
-                  `}`}renderSegment(){return t` ${this.decorateRibbon()}
+                  `}`}renderSegment(){return r` ${this.decorateRibbon()}
             <div class="body">
                 <slot name="heading-xs"></slot>
                 <slot name="body-xs"></slot>
             </div>
             <hr />
-            <slot name="footer"></slot>`}renderPlans(){return t` ${this.decorateRibbon()}
+            <slot name="footer"></slot>`}renderPlans(){return r` ${this.decorateRibbon()}
             <div class="body">
                 ${this.renderIcons()}
                 <slot name="heading-xs"></slot>
@@ -621,11 +630,12 @@ div[slot="footer"] a.con-button {
                 <slot name="body-xs"></slot>
                 ${this.createCheckBox()}
             </div>
-            ${this.createPlansFooter()}`}renderCatalog(){return t` <div class="body">
+            ${this.createPlansFooter()}`}renderCatalog(){return r` <div class="body">
                 <div class="top-section">
                     ${this.renderIcons()} ${this.decorateRibbon()}
                     <div
                         class="action-menu ${this.actionmenu?"invisible":"hidden"}"
+                        style="background-image: url(${g(w)})"
                         @click="${this.toggleActionMenu}"
                     ></div>
                 </div>
@@ -639,4 +649,4 @@ div[slot="footer"] a.con-button {
                 <slot name="body-xxs"></slot>
                 <slot name="body-xs"></slot>
             </div>
-            <slot name="footer"></slot>`}};customElements.define("merch-card",s);export{s as MerchCard};
+            <slot name="footer"></slot>`}connectedCallback(){super.connectedCallback(),this.addEventListener("keydown",this.keydownHandler)}disconnectedCallback(){super.disconnectedCallback(),this.removeEventListener("keydown",this.keydownHandler)}keydownHandler(e){let t=document.activeElement;if(t&&t.tagName===P){let d=function(c){let i=n.indexOf(c);return{row:Math.floor(i/a),col:i%a}},o,n=Array.from(this.parentElement.querySelectorAll("merch-card")).filter(c=>window.getComputedStyle(c).display!=="none").sort((c,i)=>parseInt(window.getComputedStyle(c).order,0)-parseInt(window.getComputedStyle(i).order,0)),a=1,s=n[0].getBoundingClientRect().top;for(;a<n.length&&n[a].getBoundingClientRect().top===s;)a++;switch(e.code){case z:let c=d(t);c.col>0&&(o=n[c.row*a+(c.col-1)]);break;case S:let i=d(t);i.col<a-1&&(o=n[i.row*a+(i.col+1)]);break;case C:let p=d(t);p.row>0&&(o=n[(p.row-1)*a+p.col]);break;case $:let l=d(t);l.row<Math.floor(n.length/a)-(n.length%a>l.col?0:1)&&(o=n[(l.row+1)*a+l.col]);break}o&&(o.focus(),e.preventDefault())}}};customElements.define("merch-card",x);export{P as MERCH_CARD,x as MerchCard};
