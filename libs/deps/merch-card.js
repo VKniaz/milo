@@ -1,4 +1,4 @@
-// Tue, 31 Oct 2023 16:48:26 GMT
+// Wed, 01 Nov 2023 00:17:17 GMT
 import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCSS as l}from"./lit-all.min.js";var c="(min-width: 900px)",i="(min-width: 1280px)",h="(min-width: 1440px)";var m=p`
     :host {
         position: relative;
@@ -429,29 +429,31 @@ merch-card [is=inline-price] {
 merch-card [slot='heading-xs'] {
     font-size: var(--consonant-merch-card-heading-xs-font-size);
     line-height: var(--consonant-merch-card-heading-xs-line-height);
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot='heading-s'] {
     font-size: var(--consonant-merch-card-heading-s-font-size);
     line-height: var(--consonant-merch-card-heading-s-line-height);
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot='heading-m'] {
     font-size: var(--consonant-merch-card-heading-m-font-size);
     line-height: var(--consonant-merch-card-heading-m-line-height);
-    margin: 0;
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot='heading-l'] {
     font-size: var(--consonant-merch-card-heading-l-font-size);
     line-height: var(--consonant-merch-card-heading-l-line-height);
-    margin: 0;
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot='heading-xl'] {
     font-size: var(--consonant-merch-card-heading-xl-font-size);
     line-height: var(--consonant-merch-card-heading-xl-line-height);
-    margin: 0;
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot='detail-m'] {
@@ -460,7 +462,7 @@ merch-card [slot='detail-m'] {
     letter-spacing: var(--consonant-merch-card-detail-m-letter-spacing);
     font-weight: var(--consonant-merch-card-detail-m-font-weight);
     text-transform: uppercase;
-    margin: 0;
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot="body-xxs"] {
@@ -471,21 +473,25 @@ merch-card [slot="body-xxs"] {
 merch-card [slot="body-xs"] {
     font-size: var(--consonant-merch-card-body-xs-font-size);
     line-height: var(--consonant-merch-card-body-xs-line-height);
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot="body-m"] {
     font-size: var(--consonant-merch-card-body-m-font-size);
     line-height: var(--consonant-merch-card-body-m-line-height);
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot="body-l"] {
     font-size: var(--consonant-merch-card-body-l-font-size);
     line-height: var(--consonant-merch-card-body-l-line-height);
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card [slot="body-xl"] {
     font-size: var(--consonant-merch-card-body-xl-font-size);
     line-height: var(--consonant-merch-card-body-xl-line-height);
+    margin-bottom: var(--consonant-merch-spacing-xxs: 8px);
 }
 
 merch-card[variant="special-offers"] [slot="list"] ul {

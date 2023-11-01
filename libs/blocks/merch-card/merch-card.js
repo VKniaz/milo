@@ -6,7 +6,7 @@ import { replaceKey } from '../../features/placeholders.js';
 import '../../deps/commerce.js';
 import '../../deps/merch-card.js';
 
-const cardTypes = ['segment', 'special-offers', 'plans', 'catalog'];
+const cardTypes = ['segment', 'special-offers', 'plans', 'catalog', 'product'];
 
 const textStyles = {
   H5: 'detail-m',
