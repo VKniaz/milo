@@ -1,4 +1,4 @@
-// Wed, 01 Nov 2023 05:44:52 GMT
+// Wed, 01 Nov 2023 05:57:46 GMT
 import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCSS as l}from"./lit-all.min.js";var c="(min-width: 900px)",i="(min-width: 1280px)",h="(min-width: 1440px)";var m=p`
     :host {
         position: relative;
@@ -604,7 +604,6 @@ div[slot="footer"] a.con-button {
                       <slot name="footer"></slot>
                   `}`}renderSegment(){return t` ${this.decorateRibbon()}
             <div class="body">
-                <slot name="heading-xs"></slot>
                 <slot name="heading-xs"></slot>
                 <slot name="body-xs"></slot>
             </div>
