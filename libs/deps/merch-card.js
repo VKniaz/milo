@@ -1,4 +1,4 @@
-// Wed, 01 Nov 2023 05:57:46 GMT
+// Wed, 01 Nov 2023 06:05:43 GMT
 import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCSS as l}from"./lit-all.min.js";var c="(min-width: 900px)",i="(min-width: 1280px)",h="(min-width: 1440px)";var m=p`
     :host {
         position: relative;
@@ -271,6 +271,7 @@ import{html as t,LitElement as x}from"./lit-all.min.js";import{css as p,unsafeCS
     /* body */
     --consonant-merch-card-body-xxs-font-size: 12px;
     --consonant-merch-card-body-xxs-line-height: 18px;
+    --consonant-merch-card-body-xxs-letter-spacing: 1px;
     --consonant-merch-card-body-xs-font-size: 14px;
     --consonant-merch-card-body-xs-line-height: 21px;
     --consonant-merch-card-body-m-font-size: 18px;
@@ -430,6 +431,7 @@ merch-card [slot='heading-xs'] {
     font-size: var(--consonant-merch-card-heading-xs-font-size);
     line-height: var(--consonant-merch-card-heading-xs-line-height);
     margin: 0;
+    margin-bottom: var(--consonant-merch-spacing-xxs);
 }
 
 merch-card [slot='heading-s'] {
@@ -467,6 +469,8 @@ merch-card [slot='detail-m'] {
 merch-card [slot="body-xxs"] {
     font-size: var(--consonant-merch-card-body-xxs-font-size);
     line-height: var(--consonant-merch-card-body-xxs-line-height);
+    font-weight: normal;
+    letter-spacing: var(--consonant-merch-card-body-xxs-letter-spacing);
 }
 
 merch-card [slot="body-xs"] {
