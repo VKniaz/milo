@@ -203,7 +203,7 @@
 .tabs.twp div[role="tablist"] button {
   border: none;
   align-content: center;
-  padding: 18px 18px  18px 6px;
+  padding: 10px 32px  10px 6px;
 }
 
 .tabs[class*='pill'] div[role="tablist"] button {
@@ -365,14 +365,26 @@
 .tabs.twp div[role="tablist"] button[aria-selected="true"] {
   color: var(--tabs-active-color);
   background: initial;
-  margin-bottom: -2px;
-  border-bottom: 2px solid  var(--tabs-active-color);
+  transition: height .2s ease-in-out;
 }
 
 .tabs.twp div[role="tablist"] button[aria-selected="true"]::before {
   filter: invert(63%) sepia(99%) saturate(6230%) hue-rotate(202deg) brightness(95%) contrast(90%);
 }
 
+.tabs.twp div[role="tablist"] button[aria-selected="true"]::after {
+  height: 2px;
+  background: var(--tabs-active-color);
+  top: 12px !important;
+  border-radius: 1px;
+  content: "";
+  display: block;
+  position: relative;
+  transform-origin: bottom center;
+  transition: height .2s ease-in-out;
+  width: 100%;
+
+}
 .tabs.twp .tab-paddles {
   display: none;
 }
