@@ -365,7 +365,6 @@
 .tabs.twp div[role="tablist"] button[aria-selected="true"] {
   color: var(--tabs-active-color);
   background: initial;
-  transition: height .2s ease-in-out;
 }
 
 .tabs.twp div[role="tablist"] button[aria-selected="true"]::before {
@@ -381,7 +380,6 @@
   display: block;
   position: relative;
   transform-origin: bottom center;
-  transition: height .2s ease-in-out;
   width: 100%;
 
 }
